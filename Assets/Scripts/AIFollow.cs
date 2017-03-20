@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AIFollow : MonoBehaviour {
-
-    //You may consider adding a rigid body to the zombie for accurate physics simulation
     private GameObject wayPoint;
     private Vector3 wayPointPos;
     //This will be the zombie's speed. Adjust as necessary.
-    private float speed = 6.0f;
+    private float speed = 2.0f;
     void Start()
     {
         //At the start of the game, the zombies will find the gameobject called wayPoint.

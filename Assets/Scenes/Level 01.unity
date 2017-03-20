@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bcb482b29985c438fbc24e8a2c9add, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDirection: {x: 3, y: 0, z: 0}
+  movementDirection: {x: 1, y: 0, z: 0}
   Speed: 0.25
 --- !u!1 &832685100
 GameObject:
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bcb482b29985c438fbc24e8a2c9add, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDirection: {x: 3, y: 0, z: 0}
+  movementDirection: {x: 1, y: 0, z: 0}
   Speed: 0.25
 --- !u!1001 &899335603
 Prefab:
@@ -1221,7 +1221,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400258, guid: e58e375f5ed38074480b5df1226c7bc3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.374114e-16
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400258, guid: e58e375f5ed38074480b5df1226c7bc3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1263,6 +1263,10 @@ Prefab:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400004, guid: e58e375f5ed38074480b5df1226c7bc3, type: 3}
+    - target: {fileID: 11100000, guid: e58e375f5ed38074480b5df1226c7bc3, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e58e375f5ed38074480b5df1226c7bc3, type: 3}
   m_IsPrefabParent: 0
@@ -1774,7 +1778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bcb482b29985c438fbc24e8a2c9add, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDirection: {x: -3, y: 0, z: 0}
+  movementDirection: {x: -1, y: 0, z: 0}
   Speed: 0.25
 --- !u!1 &1450461974
 GameObject:
@@ -2072,7 +2076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bcb482b29985c438fbc24e8a2c9add, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDirection: {x: -3, y: 0, z: 0}
+  movementDirection: {x: -1, y: 0, z: 0}
   Speed: 0.25
 --- !u!1 &1538527281
 GameObject:
@@ -2197,7 +2201,19 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1592674331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592674326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2b4772f87710248995151018a6f9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1211730548}
 --- !u!1 &1683379773
 GameObject:
   m_ObjectHideFlags: 0
