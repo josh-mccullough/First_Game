@@ -34,7 +34,7 @@ public class MenuScript : MonoBehaviour {
 
     public void StartLevel()
     {
-        SceneManager.LoadScene("puzzle game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void ExitGame()

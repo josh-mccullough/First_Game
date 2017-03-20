@@ -16,7 +16,7 @@ public class FPScontroller : MonoBehaviour {
 	float vertVelocity;
 
 	//jump variables
-	float jumpDist=12f;
+	float jumpDist=4.35f;
 	float jumpTime;
 
 	CharacterController player;
