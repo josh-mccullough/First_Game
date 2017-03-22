@@ -23,6 +23,7 @@ public class AIFollow : MonoBehaviour {
         wayPointPos = new Vector3(wayPoint.transform.position.x, transform.position.y, wayPoint.transform.position.z);
         //Here, the troll will follow the waypoint.
         transform.position = Vector3.MoveTowards(transform.position, wayPointPos, speed * Time.deltaTime);
+
         if (target != null)
         {
             transform.LookAt(target);
