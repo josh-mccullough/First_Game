@@ -5,14 +5,22 @@ using UnityEngine.UI;
 
 public class WallCollision : MonoBehaviour {
     public Text GameOver;
-   
+    public Vector3 movementDirection;
+    public float Speed;
+
+    // Update is called once per frame
+    void Update()
+    {
+        gameObject.transform.Translate(movementDirection * Speed * Time.deltaTime);
+
+    }
     void Start()
     {
    
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" || other.tag == "Platform")
+        if (other.name == "Character" || other.tag == "Platform")
         {
             GameOver.text = "Game Over";
             

@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Platform
   - Floor
+  - End Trigger
   layers:
   - Default
   - TransparentFX
