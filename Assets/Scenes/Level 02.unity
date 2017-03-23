@@ -91,7 +91,7 @@ NavMeshSettings:
     manualCellSize: 1
     cellSize: 0.033333335
     accuratePlacement: 0
-  m_NavMeshData: {fileID: 23800000, guid: d23c159bbb45a724289a28c67d2d68a9, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 38e44496861fa1b4d97de5e40d9bc1b9, type: 2}
 --- !u!1 &16422641
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +292,7 @@ GameObject:
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &72503025
 MeshRenderer:
