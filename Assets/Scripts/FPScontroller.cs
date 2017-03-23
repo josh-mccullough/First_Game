@@ -44,13 +44,13 @@ public class FPScontroller : MonoBehaviour {
 		rotationY = Input.GetAxis("Mouse Y") * sensitivity;
 
 		//you can clamp your mouse looking using this  code
-		rotationY = Mathf.Clamp(rotationY,-60f,60f);
+		rotationY = Mathf.Clamp(rotationY,-90f,90f);
 
 		//-------------------------------------------------
 		Vector3 movement = new Vector3 (moveLR,vertVelocity,moveFB);
 		transform.Rotate (0, rotationX, 0);
 		Eyes.transform.Rotate(-rotationY, 0, 0);
-		movement = transform.rotation * movement;
+        movement = transform.rotation * movement;
 		player.Move (movement * Time.deltaTime);
 
 

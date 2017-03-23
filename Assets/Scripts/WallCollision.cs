@@ -7,6 +7,7 @@ public class WallCollision : MonoBehaviour {
     public Text GameOver;
     public Vector3 movementDirection;
     public float Speed;
+    bool GameOverChecker = false;
 
     // Update is called once per frame
     void Update()
@@ -20,8 +21,10 @@ public class WallCollision : MonoBehaviour {
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Character" || other.tag == "Platform")
+       
+        if ((other.name == "Character" || other.tag == "Platform")  && GameOverChecker == false)
         {
+           
             GameOver.text = "Game Over";
             
             GetComponent<AudioSource>().volume = Random.Range(0.8f, 1);
@@ -31,10 +34,11 @@ public class WallCollision : MonoBehaviour {
             StartCoroutine( WaitAndLoadScene(3));
          
         }
+        
     }
         IEnumerator WaitAndLoadScene(int waitTime)
      {
-       
+        GameOverChecker = true;
         yield return new WaitForSeconds(waitTime);
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
