@@ -45,6 +45,7 @@ public class PickupObject : MonoBehaviour {
 					carrying = true;
 					carriedObject = p.gameObject;
 					p.GetComponent<Rigidbody>().useGravity = false;
+                    p.GetComponent<Rigidbody>().freezeRotation = true;//THIS LINE FIXES WEIRD PHYSICS ON PICKED UP OBJECTS!!!!!!!!!!
 				}
 			}
 		}
