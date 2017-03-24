@@ -9,6 +9,8 @@ TagManager:
   - Platform
   - Floor
   - End Trigger
+  - Trigger
+  - SpecialCubes
   layers:
   - Default
   - TransparentFX
